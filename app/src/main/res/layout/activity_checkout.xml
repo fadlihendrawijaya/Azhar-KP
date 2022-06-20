@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    android:backgroundTint="#EBE4AC3C"
+    android:backgroundTintMode="add"
+    tools:context=".Checkout">
+
+    <LinearLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Pembayaran"
+            android:background="@drawable/bgformhome"
+            android:layout_marginTop="25dp"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:fontFamily="fantasy"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="-----------------------------------------------------------------------------"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Jenis yang dibeli"
+            android:textSize="18dp"
+            android:background="@drawable/bg"
+            android:layout_marginTop="25dp"
+            android:id="@+id/jns"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Harga yang dibeli"
+            android:textSize="18dp"
+            android:background="@drawable/bg"
+            android:layout_marginTop="25dp"
+            android:id="@+id/hrg"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Potongan Harga"
+            android:textSize="18dp"
+            android:background="@drawable/bg"
+            android:layout_marginTop="25dp"
+            android:id="@+id/dscnt"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  PPN 10%"
+            android:textSize="18dp"
+            android:background="@drawable/bg"
+            android:layout_marginTop="25dp"
+            android:id="@+id/ppn"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  -----------------------------------------------------------------------------"
+            android:textSize="18dp"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="  Jumlah"
+            android:textSize="18dp"
+            android:background="@drawable/bg"
+            android:textStyle="bold"
+            android:layout_marginTop="25dp"
+            android:id="@+id/jml"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bgbtn"
+                android:text="kembali ke menu"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/btm"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

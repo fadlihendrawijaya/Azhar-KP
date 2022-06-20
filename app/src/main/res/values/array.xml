@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pilih_paket">
+        <item>Panas</item>
+        <item>Dingin</item>
+    </string-array>
+    <string-array name="kategori">
+        <item>Kopi</item>
+        <item>Non Kopi</item>
+    </string-array>
+</resources>

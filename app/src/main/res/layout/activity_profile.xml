@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bgapk"
+    tools:context=".Profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/grup1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame1"
+            android:background="#D8C28C">
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/gohom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="left"
+                android:src="@drawable/gohom"
+                android:backgroundTint="#C59A66"/>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/klikout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:layout_gravity="right"
+                android:src="@drawable/out"
+                android:backgroundTint="#A52A2A"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:src="@drawable/laki"
+                android:id="@+id/gambar1"
+                android:background="@drawable/bgpfl"/>
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp">
+
+            <TextView
+                android:id="@+id/nama_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Nama          :"
+                android:textSize="20sp"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/ed_nama"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/nama_user"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="  Nama"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nama_user"
+                android:layout_marginTop="38dp"
+                android:text="Username  :"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/etUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_nama"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/user"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="   User"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/alamat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/user"
+                android:layout_marginTop="40dp"
+                android:text="Alamat    :"
+                android:textSize="20sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/etalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etUsername"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/alamat"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="   Alamat"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ttl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/alamat"
+                android:layout_marginTop="38dp"
+                android:text="Tanggal Lahir :"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ed_tgllhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/etalamat"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/ttl"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="  Tanggal"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/klm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ttl"
+                android:layout_marginTop="38dp"
+                android:text="Jenis Kelamin :"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/ed_klm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ed_tgllhr"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:layout_toRightOf="@id/ttl"
+                android:background="@drawable/bg"
+                android:gravity="center"
+                android:minHeight="48dp"
+                android:text="  Kelamin"
+                android:textSize="20sp" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

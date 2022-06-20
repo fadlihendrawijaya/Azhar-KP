@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/logo"
+    tools:context=".MainActivity">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_barang"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgg"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="360dp"
+        android:visibility="visible"
+        tools:listitem="@layout/item_list" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_nonkopi"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bgg"
+        tools:layout_editor_absoluteX="61dp"
+        tools:layout_editor_absoluteY="360dp"
+        android:visibility="gone"
+        tools:listitem="@layout/item_list" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/btn_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_margin="15dp"
+        android:src="@drawable/ic_baseline_add_24"
+        android:backgroundTint="#F3D407"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bayar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/bgbtn"
+        android:text="bayar"
+        app:layout_constraintBottom_toBottomOf="@+id/rv_barang"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.898"
+        android:visibility="visible"/>
+
+    <Button
+        android:id="@+id/btm"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/bgback"
+        android:gravity="center"
+        android:text="Back to menu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/rv_barang"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/rv_barang"
+        app:layout_constraintTop_toBottomOf="@+id/bayar"
+        app:layout_constraintVertical_bias="1.0" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

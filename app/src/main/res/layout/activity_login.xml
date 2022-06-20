@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBE4AC3C"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/grup1">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/frame1">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:adjustViewBounds="true"
+                android:src="@drawable/logo"
+                android:id="@+id/gambar1"/>
+
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Tulis Username"
+            android:background="@drawable/bg"
+            android:minHeight="48dp"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+        <EditText
+            android:id="@+id/etPw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:hint="Tulis Password Anda"
+            android:background="@drawable/bg"
+            android:inputType="textPassword"
+            android:minHeight="48dp"
+            tools:ignore="Autofill,LabelFor,SpeakableTextPresentCheck" />
+
+            <ProgressBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/loading"
+                android:visibility="gone"
+                />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/kliksuk"
+            android:layout_margin="8dp"
+            android:text="Masuk"
+            android:backgroundTint="@color/gold"
+            android:visibility="visible"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Belum memiliki akun? Klik Daftar!"
+            android:id="@+id/ket"
+            android:gravity="center"
+            android:textSize="12dp"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/daftar"
+            android:layout_margin="8dp"
+            android:text="daftar"
+            android:backgroundTint="@color/goldlight"/>
+
+        <TextView
+            android:id="@+id/version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/shapebg"
+            android:text="v 0.0.3"
+            android:textColor="@color/gold"
+            android:textSize="12dp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.core.widget.NestedScrollView>
